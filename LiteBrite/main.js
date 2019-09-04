@@ -31,11 +31,11 @@ function main() {
   });
 
   $(".toggle-blink").on("click", function() {
-    if (bliking) {
-      bliking = false;
+    if (blinking) {
+      blinking = false;
       clearInterval(interval);
     } else {
-      bliking = true;
+      blinking = true;
       if (colorClass) {
         $(".toggle-blink").toggleClass("opacity");
         setInterval(function() {
